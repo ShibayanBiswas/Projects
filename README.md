@@ -1,2 +1,2 @@
 # Projects:
-This section contains all the projects developed by me in my coding journey.
+A project is any undertaking, carried out individually or collaboratively and possibly involving research or design, that is carefully planned to achieve a particular aim. An alternative view sees a project managerially as a sequence of events: a "set of interrelated tasks to be executed over a fixed period and within certain cost and other limitations". A project may be a temporary (rather than permanent) social system (work system), possibly staffed by teams (within or across organizations) to accomplish particular tasks under time constraints.
