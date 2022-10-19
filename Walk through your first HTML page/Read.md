@@ -1,4 +1,4 @@
-Blog: Walk through your first HTML page
+Blog: Walk through your first HTML page-
 
 We have learned about some basic tags of HTML and how they can be used with each other in combination.
 So get ready to make use of everything you have learned so far, without much help. It's your test time.
