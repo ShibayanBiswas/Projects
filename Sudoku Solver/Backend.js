@@ -1,6 +1,6 @@
 "use strict";
 
-// Set this variable to true to publicly expose otherwise private functions inside of SudokuSolver
+// Set this variable to true to publicly expose otherwise private functions inside of Sudoku Solver
 var TESTABLE = true;
 
 var SudokuSolver = function (testable) {
