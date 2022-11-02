@@ -16,7 +16,7 @@ using namespace std;
 // A function to show the current board status 
 void showBoard(char board[][SIDE])
 {
-    printf("\t\t\t %c | %c | %c \n", board[0][0], board[0][1], board[0][2]); 
+        printf("\t\t\t %c | %c | %c \n", board[0][0], board[0][1], board[0][2]); 
 	printf("\t\t\t-----------\n");
 	printf("\t\t\t %c | %c | %c \n", board[1][0], board[1][1], board[1][2]); 
 	printf("\t\t\t-----------\n"); 
@@ -41,9 +41,9 @@ void initialise(char board[][SIDE])
 	for (int i = 0; i < SIDE; i++) 
 	{ 
 		for (int j = 0; j < SIDE; j++) 
-        {
+        	{
 			board[i][j] = ' '; 
-        }
+        	}
 	} 
 }
 
@@ -51,13 +51,13 @@ void initialise(char board[][SIDE])
 void declareWinner(int whoseTurn) 
 { 
 	if (whoseTurn == COMPUTER) 
-    {
+    	{
 		printf("COMPUTER has won \n"); 
-    }
+    	}
 	else
-    {
+    	{
 		printf("HUMAN has won \n"); 
-    }
+    	}
 } 
 
 // A function that returns true if any of the row is crossed with the same player's move 
@@ -66,9 +66,9 @@ bool rowCrossed(char board[][SIDE])
 	for (int i = 0; i < SIDE; i++) 
 	{ 
 		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ') 
-        {
+        	{
 			return true;
-        } 
+        	} 
 	} 
 	return false; 
 } 
@@ -79,9 +79,9 @@ bool columnCrossed(char board[][SIDE])
 	for (int i = 0; i < SIDE; i++) 
 	{ 
 		if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ') 
-        {
+        	{
 			return true;
-        } 
+        	} 
 	} 
 	return false; 
 } 
@@ -90,14 +90,14 @@ bool columnCrossed(char board[][SIDE])
 bool diagonalCrossed(char board[][SIDE]) 
 { 
 	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') 
-    {
+    	{
 		return true;
-    } 
+    	} 
 		
 	else if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') 
-    {
+    	{
 		return true; 
-    }
+    	}
 	return false; 
 } 
 
@@ -115,13 +115,13 @@ int minimax(char board[][SIDE], int depth, bool isAI)
 	if (gameOver(board) == true)
 	{
 		if (isAI == true)
-        {
+        	{
 			return -1;
-        }
+        	}
 		if (isAI == false)
-        {
+        	{
 			return 1;
-        }
+        	}
 	}
 	else
 	{
@@ -232,15 +232,15 @@ void playTicTacToe(int whoseTurn)
 		{
 			printf("You can insert in the following positions : ");
 			for(int i = 0; i < SIDE; i++)
-            {
+            		{
 				for (int j = 0; j < SIDE; j++)
-                {
+                		{
 					if (board[i][j] == ' ')
-                    {
+                    			{
 						printf("%d ", (i * 3 + j) + 1);
-                    }
-                }
-            }
+                    			}
+                		}
+            		}
 			printf("\n\n Enter the position = ");
 			scanf("%d",&n);
 			n--;
@@ -267,20 +267,20 @@ void playTicTacToe(int whoseTurn)
 
     // If the game has drawn 
 	if (gameOver(board) == false && moveIndex == SIDE * SIDE) 
-    {
+    	{
 		printf("It's a draw \n"); 
-    }
+    	}
 	else
 	{ 
 		// Toggling the user to declare the actual winner 
 		if (whoseTurn == COMPUTER) 
-        {
+        	{
 			whoseTurn = HUMAN; 
-        }
+        	}
 		else if (whoseTurn == HUMAN) 
-        {
+        	{
 			whoseTurn = COMPUTER; 
-        }
+        	}
 		declareWinner(whoseTurn); 
 	} 
 } 
@@ -297,17 +297,17 @@ int main()
 	 	scanf(" %c", &choice);
 
 		if(choice == 'n')
-        {
+        	{
 			playTicTacToe(COMPUTER);
-        }
+        	}
 		else if(choice == 'y')
-        {
+        	{
 			playTicTacToe(HUMAN);
-        }
+        	}
 		else
-        {
+        	{
 			printf("Invalid choice \n"); 
-        }
+        	}
         
 		printf("\nDo you want to quit? (y/n) : ");
        		scanf(" %c", &cont);
@@ -316,5 +316,3 @@ int main()
 	
     return 0; 
 } 
-
-
