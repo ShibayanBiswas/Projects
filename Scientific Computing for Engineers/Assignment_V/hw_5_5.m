@@ -1,8 +1,10 @@
 clc
 clear all
 format longG
+
 a= 0;
 b = pi/2;
+
 del_x=zeros(199,1);
 sum_le = zeros(199,1);
 sum_re = zeros(199,1);
@@ -40,8 +42,9 @@ for n = 1 : 199;
   e=cputime;
   time_4(n)=e-s;
  end
- n=1:199
- hf = figure()
+
+n = [1 : 199]
+hf = figure()
 hold
 plot(n,time_1)
 plot(n,time_2)
