@@ -1,8 +1,10 @@
 clc
 clear all
 format longG
+
 a= 0;
 b = pi/2;
+
 del_x=zeros(199,1);
 sum_le = zeros(199,1);
 sum_re = zeros(199,1);
@@ -32,7 +34,8 @@ for n = 1 : 199;
     err_4(n)=abs(sum_tz(n) - 1);
   end
  end
- hf=figure()
+ 
+hf=figure()
 hold
 plot(log(del_x),log(err_1))
 plot(log(del_x),log(err_2))
