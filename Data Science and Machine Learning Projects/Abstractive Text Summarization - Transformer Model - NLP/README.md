@@ -1,0 +1,1 @@
+The objective of the project is to generate an abstractive summary from a bigger article. The process includes all the preprocessing steps and summarising the whole article. This will be very helpful to get the important context of a bigger article. Libraries used are Torch, Transformers. Here Transformer Neural Network is used
