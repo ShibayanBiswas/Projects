@@ -1,1 +1,3 @@
 A set of 200 target words were spoken in the carrier phrase “Say the word” by two actresses (aged 26 and 64 years) and recordings were made of the set portraying each of seven emotions (anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). There are 2800 data points (audio files) in total. The format of the audio file is a WAV format. Libraries used are Pandas, Matplotlib, Keras, TensorFlow, Librosa. Here LSTM neural network is used. Accuracy is 67.00
+
+Download the dataset from the link : https://www.kaggle.com/ejlok1/toronto-emotional-speech-set-tess
