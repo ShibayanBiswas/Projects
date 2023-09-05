@@ -2,4 +2,4 @@ The objective of the project is to develop a deep learning model to identify whe
 
 Download the dataset from the link : https://www.kaggle.com/c/fake-news/data
 
-Glove Embedding link: https://www.kaggle.com/anindya2906/glove6b?select=glove.6B.100d.txt
+Glove Embedding link: https ://www.kaggle.com/anindya2906/glove6b?select=glove.6B.100d.txt
