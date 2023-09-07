@@ -1,1 +1,0 @@
-The dataset contains the top 250 movies from IMDB with 27 attributes like Title, Director, Genre, Plot, Ratings, etc. There is a workflow from original cobbled together spreadsheets to the final product with 27 variables and over 5000 observations. Libraries used are Pandas, Nltk, Scikit-Learn, Re. Algorithm used is Content-Based filtering
