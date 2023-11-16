@@ -1,8 +1,5 @@
 # ============================================================================
 # Getting financial data from yahoo finance using webscraping
-# Author - Mayank Rasu
-
-# Please report bugs/issues in the Q&A section
 # =============================================================================
 
 import requests
