@@ -2,5 +2,5 @@ In this problem, the dataset comprises of sales transactions captured at a retai
 
 Problem: Predict purchase amount
 
-Libraries used are Pandas, Matplotlib, Seaborn, Scikit-Learn. Algorithms used are Linear Regression, Decision Tree, Random Forest, Extra Tress
+Libraries used are Pandas, Matplotlib, Seaborn, Scikit-Learn. Algorithms used are Linear Regression, Decision Tree, Random Forest, Extra Trees
 
