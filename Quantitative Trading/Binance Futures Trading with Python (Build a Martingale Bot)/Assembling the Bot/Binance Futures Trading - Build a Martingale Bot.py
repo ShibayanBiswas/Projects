@@ -57,7 +57,7 @@ def get_market_price_real(symbol):
     price = client.get_symbol_ticker(symbol=symbol)
     return float(price["price"])
 
-## Calcutating the Price Deviation
+## calcutating the Price Deviation
 def cal_deviation(direction,intial_price,current_price):
     dev = ((current_price-intial_price)/intial_price)*100
     if direction == "LONG":
