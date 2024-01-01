@@ -116,9 +116,9 @@ def place_tp(symbol,price,t_position_amt,direction):
         if direction == "LONG":
             sell_limit(symbol,t_position_amt,price)
         if direction == "SHORT":
-            buy_limit(symbol, t_position_amt, price)
+            buy_limit(symbol,t_position_amt,price)
     except:
-        place_tp(symbol, price, t_position_amt, direction)
+        place_tp(symbol,price,t_position_amt,direction)
 
 ## closing buy limit orders
 def close_buy_limit(symbol):
