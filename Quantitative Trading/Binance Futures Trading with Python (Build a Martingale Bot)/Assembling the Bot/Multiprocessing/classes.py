@@ -60,7 +60,7 @@ class Bot:
         return float(price["price"])
 
     ## calcutating the Price Deviation
-    def cal_deviation(self,direction, intial_price, current_price):
+    def cal_deviation(self,direction,intial_price,current_price):
         dev = ((current_price - intial_price) / intial_price) * 100
         if direction == "LONG":
             return dev
@@ -114,9 +114,9 @@ class Bot:
             if direction == "LONG":
                 self.sell_limit(symbol, t_position_amt, price)
             if direction == "SHORT":
-                self.buy_limit(symbol, t_position_amt, price)
+                self.buy_limit(symbol,t_position_amt,price)
         except:
-            self.place_tp(symbol, price, t_position_amt, direction)
+            self.place_tp(symbol,price,t_position_amt,direction)
 
     ## closing buy limit orders
     def close_buy_limit(self,symbol):
