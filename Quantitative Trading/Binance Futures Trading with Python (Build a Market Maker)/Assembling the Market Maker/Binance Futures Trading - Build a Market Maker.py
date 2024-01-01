@@ -136,9 +136,9 @@ def place_tp_order(symbol,price,t_position_amt,direction):
         if direction == "LONG":
             sell_limit(symbol,t_position_amt,price)
         if direction == "SHORT":
-            buy_limit(symbol, t_position_amt, price)
+            buy_limit(symbol,t_position_amt,price)
     except:
-        place_tp_order(symbol, price, t_position_amt, direction)
+        place_tp_order(symbol,price,t_position_amt,direction)
 
 
 ## driver code
