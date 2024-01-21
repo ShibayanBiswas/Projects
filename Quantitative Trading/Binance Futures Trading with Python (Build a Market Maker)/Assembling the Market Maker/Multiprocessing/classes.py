@@ -120,7 +120,7 @@ class Bot:
             adj_buy += 0.2
 
     ## calculate take profit price
-    def cal_tp_level(self,symbol, tp):
+    def cal_tp_level(self,symbol,tp):
         try:
             x = client.futures_position_information(symbol=symbol)
             df = pd.DataFrame(x)
